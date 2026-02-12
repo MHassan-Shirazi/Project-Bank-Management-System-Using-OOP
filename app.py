@@ -75,3 +75,4 @@ elif menu == "Delete Account":
     if st.button("Delete"):
         success, msg = Bank.delete_user(acc_no, int(pin))
         st.success(msg) if success else st.error(msg)
+
